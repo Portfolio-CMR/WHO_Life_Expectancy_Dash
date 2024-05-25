@@ -2,4 +2,4 @@
 
 ## [Tableau Dashboard](https://public.tableau.com/app/profile/colton.robbins/viz/WHOlifeexpectancy/WHOLifeexpectancy?publish=yes)
 
-![who_dash](/WHO_Life_Expectancy_Dash/images/who_dash.png)
+![who_dash](/WHO_Life_Expectancy_Dash/static/images/who_dash.png)
