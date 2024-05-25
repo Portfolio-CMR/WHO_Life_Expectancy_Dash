@@ -1,6 +1,6 @@
 baseURL = 'https://Portfolio-CMR.github.io/WHO_Life_Expectancy_Dash/'
 languageCode = 'en-us'
-title = 'World Health Organization Life Expectancy'
+title = 'WHO_Life_Expectancy_Dash'
 theme = 'data_portfolio'
 
 [menu]
