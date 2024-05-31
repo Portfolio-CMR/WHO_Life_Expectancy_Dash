@@ -7,8 +7,16 @@ weight = 2
 
 ### **Using H2O AutoML Workflow**
 
-1. **Prep work:** I load my data, figure out what I'm trying to predict (the target variable), and deal with any missing values.
-2. **Set the stage:** I tell H2O what kind of problem I'm solving (like predicting numbers) and if there are any special rules I want to follow.
-3. **Let H2O do its magic:** AutoML takes over, training lots of different models and figuring out the best settings for each.
-4. **Pick the winner:** I look at how well each model did and choose the one that performed the best.
-5. **Put it to work:** I export the chosen model and use it to make predictions on new data. 
+1. **Prep work:** I load my data, point out the target column "Life expectancy", and impute missing values.
+2. **Let H2O do its magic:** AutoML takes over, and benchmarks hundreds of different models using cross-validation. Here are the top performers:
+
+| model_id                                             | rmse   | mse    | mae    | rmsle  | mean_residual_deviance |
+| ---------------------------------------------------- | ------ | ------ | ------ | ------ | ---------------------- |
+| StackedEnsemble_AllModels_5_AutoML_8_20240523_123256 | 1.5141 | 2.2926 | 0.7862 | 0.0235 | 2.2926                 |
+| StackedEnsemble_AllModels_4_AutoML_8_20240523_123256 | 1.5210 | 2.3134 | 0.8363 | 0.0236 | 2.3134                 |
+| StackedEnsemble_AllModels_3_AutoML_8_20240523_123256 | 1.5612 | 2.4374 | 0.8530 | 0.0241 | 2.4374                 |
+| GBM_grid_1_AutoML_8_20240523_123256_model_11         | 1.5655 | 2.4509 | 0.8601 | 0.0242 | 2.4509                 |
+
+3. **Explainability:** Models can be used more effectively if you know why they perform well. Here are some explainability charts for top performing models.
+
+4. **Put it to work:** I export the chosen model and use it to make predictions on new data. 
