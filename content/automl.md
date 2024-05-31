@@ -17,6 +17,6 @@ weight = 2
 | StackedEnsemble_AllModels_3_AutoML_8_20240523_123256 | 1.5612 | 2.4374 | 0.8530 | 0.0241 | 2.4374                 |
 | GBM_grid_1_AutoML_8_20240523_123256_model_11         | 1.5655 | 2.4509 | 0.8601 | 0.0242 | 2.4509                 |
 
-3. **Explainability:** Models can be used more effectively if you know why they perform well. Here are some explainability charts for top performing models.
+3. **Explainability:** Models can be used more effectively if you know why they perform well. Here are some explainability charts for top-performing models.
 
 4. **Put it to work:** I export the chosen model and use it to make predictions on new data. 
